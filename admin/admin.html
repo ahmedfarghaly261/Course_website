@@ -18,7 +18,7 @@
         rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -72,22 +72,7 @@
             <h1 class="text-white mt-4 mb-4">admin Home</h1>
             <h1 class="text-white display-1 mb-5">Education Courses</h1>
             <div class="mx-auto mb-5" style="width: 100%; max-width: 600px;">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <button class="btn btn-outline-light bg-white text-body px-4 dropdown-toggle" type="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Courses 1</a>
-                            <a class="dropdown-item" href="#">Courses 2</a>
-                            <a class="dropdown-item" href="#">Courses 3</a>
-                        </div>
-                    </div>
-                    <input type="text" class="form-control border-light" style="padding: 30px 25px;"
-                        placeholder="Keyword">
-                    <div class="input-group-append">
-                        <button class="btn btn-secondary px-4 px-lg-5">Search</button>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
@@ -105,15 +90,16 @@
 
 
     <!-- Feature Start -->
+    <div class="center">
+        <center>
+            <h2>Added courses</h2>
+        </center>
+
+    </div>
     <div class="container-fluid bg-image" style="margin: 90px 0;" id="courses">
         <div class="container">
             <div class="row">
-                <div class="center">
-                    <center>
-                        <h2>Added courses</h2>
-                    </center>
-                    <br>
-                </div>
+
                 <br>
 
                 <div class="container">
@@ -126,25 +112,47 @@
                                         <th scope="col">ID</th>
                                         <th scope="col">Course Name</th>
                                         <th scope="col">code</th>
-                                        <th scope="col">GPA</th>
+                                        <th scope="col">type</th>
                                         <th scope="col">Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr style="font-weight: bold; font-size: 16px;">
                                         <th scope="row">1</th>
-                                        <td>Network securtiy</td>
+                                        <td>PYTHON</td>
                                         <td>CS111</td>
-                                        <td>2.846</td>
+                                        <td>Free</td>
                                         <td>
-                                            <button type="button" class="btn btn-danger"> delete<i class="fa-solid fa-delete-left"></i></button>
+                                            <button type="button" class="btn btn-primary"> details </button>
+                                            <button type="button" class="btn btn-danger"> delete </button>
+                                        </td>
+                                    </tr>
+                                    <tr style="font-weight: bold; font-size: 16px;">
+                                        <th scope="row">2</th>
+                                        <td>C#</td>
+                                        <td>CS130</td>
+                                        <td>Free</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary"> details </button>
+                                            <button type="button" class="btn btn-danger"> delete </button>
+                                        </td>
+                                    </tr>
+                                    <tr style="font-weight: bold; font-size: 16px;">
+                                        <th scope="row">3</th>
+                                        <td>REACT</td>
+                                        <td>IT330</td>
+                                        <td>Paid 45$</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary"> details </button>
+                                            <button type="button" class="btn btn-danger"> delete </button>
                                         </td>
                                     </tr>
 
                                 </tbody>
                             </table>
                             <br>
-                            <button id="but_addCourse" type="button" class="btn btn-success" onclick="addCours()"> Add Course<i class="fa-solid fa-delete-left"></i></button>
+                            <button id="but_addCourse" type="button" class="btn btn-success" onclick="addCours()"> Add
+                                Course<i class="fa-solid fa-delete-left"></i></button>
 
                         </div>
 
@@ -164,7 +172,7 @@
     <div class="container-fluid bg-image" style="margin: 90px 0;" id="courses">
         <div class="container">
             <div class="row">
-          
+
                 <br>
 
                 <div class="container">
@@ -176,7 +184,7 @@
                                     <tr>
                                         <th scope="col">ID</th>
                                         <th scope="col">User Name</th>
-                                        <th scope="col">dep</th>
+                                        <th scope="col">Enrolled Courses</th>
                                         <th scope="col">Date Of Birth</th>
                                         <th scope="col">Actions</th>
                                     </tr>
@@ -185,17 +193,27 @@
                                     <tr style="font-weight: bold; font-size: 16px;">
                                         <th scope="row">1</th>
                                         <td>FEGOO</td>
-                                        <td>CS</td>
+                                        <td>c++ , Python</td>
                                         <td>12/12/2003</td>
                                         <td>
-                                            <button type="button" class="btn btn-danger"> delete<i class="fa-solid fa-delete-left"></i></button>
+                                            <button type="button" class="btn btn-danger"> delete </button>
+                                        </td>
+                                    </tr>
+                                    <tr style="font-weight: bold; font-size: 16px;">
+                                        <th scope="row">2</th>
+                                        <td>Ahmed</td>
+                                        <td>c# , Python</td>
+                                        <td>1/1/2003</td>
+                                        <td>
+                                            <button type="button" class="btn btn-danger"> delete </button>
                                         </td>
                                     </tr>
 
                                 </tbody>
                             </table>
                             <br>
-                            <button id="but_addCourse" type="button" class="btn btn-success" onclick="addUser()"> Add user<i class="fa-solid fa-delete-left"></i></button>
+                            <button id="but_addCourse" type="button" class="btn btn-success" onclick="addUser()"> Add
+                                user<i class="fa-solid fa-delete-left"></i></button>
 
                         </div>
 
@@ -208,7 +226,7 @@
     </div>
 
     <!-- Feature Start -->
- 
+
 
 
 
